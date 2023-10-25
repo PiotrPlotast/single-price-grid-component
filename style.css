@@ -74,8 +74,66 @@ select {
     }
 }
 
+/* Variables */
+
+:root {
+    --bg-color: hsl(204, 43%, 93%);
+    --card-join-community-bg-color: hsl(0, 0%, 100%);
+    --card-monthly-sub-bg-color: hsl(179, 62%, 43%);
+    --card-why-us-bg-color: hsl(179, 47%, 52%);
+    --h1-color: hsl(179, 62%, 43%);
+    --h2-color: hsl(71, 73%, 54%);
+    --h3-color: hsl(0, 0%, 100%);
+    --main-text-color: hsl(218, 22%, 67%);
+}
+
 /* Custom styles */
 
 body {
     font-family: 'Karla', sans-serif;
+    min-height: 100dvh;
+    background-color: var(--bg-color);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card__join-community {
+    background-color: var(--card-join-community-bg-color);
+    padding: 1.5rem;
+}
+
+h1 {
+    color: var(--h1-color);
+}
+
+h2 {
+    color: var(--h2-color);
+}
+
+.card__join-community p {
+    color: var(--main-text-color);
+}
+
+.card__monthly-sub {
+    background-color: var(--card-monthly-sub-bg-color);
+    padding: 1.5rem;
+}
+
+.card__why-us {
+    background-color: var(--card-why-us-bg-color);
+    padding: 1.5rem;
+}
+
+h3 {
+    color: var(--h3-color);
 }

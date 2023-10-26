@@ -97,6 +97,7 @@ body {
 }
 
 main {
+    min-height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,4 +191,43 @@ h3 {
 .card__why-us li {
     font-size: 0.87rem;
     color: var(--p-color);
+}
+
+@media (min-width: 700px) {
+    .card {
+        display: grid;
+        grid-template-areas:
+            "a a"
+            "b c";
+        max-width: 40rem;
+        border-radius: 10px;
+    }
+
+    .card__join-community {
+        grid-area: a;
+        padding: 3rem;
+    }
+
+    .card__join-community h1 {
+        font-size: 1.5rem;
+    }
+
+    .card__join-community h2 {
+        font-size: 1.2rem;
+    }
+
+    .card__join-community p {
+        font-size: 1rem;
+    }
+
+    .card__monthly-sub {
+        grid-area: b;
+        padding: 3rem;
+        padding-bottom: 1rem;
+    }
+
+    .card__why-us {
+        grid-area: c;
+        padding: 2rem 3rem 1rem 3rem;
+    }
 }

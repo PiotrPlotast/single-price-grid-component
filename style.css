@@ -205,7 +205,7 @@ h3 {
 
     .card__join-community {
         grid-area: a;
-        padding: 3rem;
+        padding: 2.5rem 3rem 2.5rem 3rem;
     }
 
     .card__join-community h1 {
@@ -222,9 +222,17 @@ h3 {
 
     .card__monthly-sub {
         grid-area: b;
-        padding: 3rem;
-        padding-bottom: 1rem;
+        padding: 2rem 3rem 2rem 3rem;
     }
+
+    .card__monthly-sub h2 {
+        font-size: 1.2rem;
+    }
+
+    .card__monthly-sub p:first-of-type {
+        margin-top: 0.8rem;
+    }
+
 
     .card__why-us {
         grid-area: c;
